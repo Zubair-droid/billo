@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billo Clone</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Slick css -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid navbar-pad">
+            <img class="navbar-brand billo-img" src="https://billo.app/wp-content/uploads/2022/07/logo.png" alt="">
+            <button class="navbar-toggler navbar-toggler-class" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img class="offcanvas-title billo-img" id="offcanvasNavbarLabel" src="https://billo.app/wp-content/uploads/2022/07/logo.png
+                        " alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Become a creator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                        <button onclick="clickMe()" class="btn billo-btn mt-0"> Order now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Text section -->
+
+    <div class="hero-text-section text-center">
+        <h1 class="">
+            <span class="hero-text">#1 UGC marketplace</span>
+            <br>
+            for video ads
+        </h1>
+
+        <p class="support-text mt-3">Effortlessly expand your marketing with made-to-order content.</p>
+        <button onclick="clickMe()" class="btn billo-btn mt-3"> Order now
+        </button>
+
+    </div>
+
+    <!-- Slicker slider section -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FFDDC1;" -->
+                <img src="https://billo.app/wp-content/uploads/2023/10/5.webp">
+            </div>
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FFABAB;" -->
+                <video muted="" playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/7.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/Lily_F_328px.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/Lily-F.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/Lily_F_328px.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FFC3A0;" -->
+                <video muted="" playsinline="" autoplay="" loop=""
+                    poster="https://billo.app/wp-content/uploads/2023/12/3.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/12/3-184-x-330.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/12/3-405-×-721.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/12/3-184-x-330.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FF677D;" -->
+                <video muted="" playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/4.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/Jessica_A_328px-1.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/Jessica-A.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/Jessica_A_328px-1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #D4A5A5;"  -->
+                <img src="https://billo.app/wp-content/uploads/2023/10/2.webp">
+            </div>
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FFDDC1;" -->
+                <video muted="" playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/1.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/Alexis_A_328px-1.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/Alexis-A.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/Alexis_A_328px-1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FFABAB;" -->
+                <video muted="" playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/7.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/Lily_F_328px.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/Lily-F.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/Lily_F_328px.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FFC3A0;"> -->
+                <video muted="" playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/9.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/Austin_G_328px.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/Austin-G.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/Austin_G_328px.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="carousel-item item-container">
+                <!-- style="background-color: #FF677D;"> -->
+                <video class="" style="border-radius: 20px; " muted="" playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/10.webp"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/McKenna_I_328px.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/McKenna-L.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/McKenna_I_328px.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="carousel-item item-container last-item">
+                <!-- style="background-color: #D4A5A5;"> -->
+                <video class="card-img-top wider-card" style="border-radius: 20px; height: auto; " class="" muted=""
+                    playsinline="" autoplay="" loop="" preload="none"
+                    poster="https://billo.app/wp-content/uploads/2023/10/deja-g.jpg"
+                    data-video-small="https://billo.app/wp-content/uploads/2023/10/Deja_G_328px-1.mp4"
+                    data-video-url="https://billo.app/wp-content/uploads/2023/10/Deja-G.mp4">
+                    <source src="https://billo.app/wp-content/uploads/2023/10/Deja_G_328px-1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="carousel-btns">
+
+            <button class="carousel-prev carousel-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M7.86751 18.9995L1.74854 11.9995L7.86751 4.99951L8.78536 6.04951L4.23983 11.2495H19.2313V12.7495H4.23983L8.78536 17.9495L7.86751 18.9995Z"
+                        fill="black"></path>
+                </svg>
+            </button>
+            <button class="carousel-next carousel-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M13.1325 4.99951L19.2515 11.9995L13.1325 18.9995L12.2146 17.9495L16.7602 12.7495L1.76868 12.7495L1.76868 11.2495L16.7602 11.2495L12.2146 6.04951L13.1325 4.99951Z"
+                        fill="black"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Logo slider (Slicker slider)  -->
+
+    <div class="clients-section">
+        <p class="clients-count text-center"> <b> 17,000+ </b> clients</p>
+        <div class="slick-list draggable">
+            <div class="slick-track">
+                <div class="logo-slider">
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2023/08/versed-1.png" alt="">
+                    </div>
+
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2022/07/adore-me-cropped.svg"
+                            alt="">
+                    </div>
+
+                    <div class="logo-slide">
+                        <img class="logo-img"
+                            src="https://billo.app/wp-content/uploads/2023/10/hellofresh-logo-black-1-e1697794896904.webp"
+                            alt="">
+                    </div>
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2022/07/Harrys_Logo.svg" alt="">
+                    </div>
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2023/08/image-38.png"
+                            style="filter: grayscale(100%);" alt="">
+                    </div>
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2023/08/coola-1.png" alt="">
+                    </div>
+
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2023/08/versed-1.png" alt="">
+                    </div>
+
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2023/08/image-38.png"
+                            style="filter: grayscale(100%);" alt="">
+                    </div>
+                    <div class="logo-slide">
+                        <img class="logo-img" src="https://billo.app/wp-content/uploads/2022/07/Harrys_Logo.svg" alt="">
+                    </div>
+                    <div class="logo-slide">
+                        <img class="logo-img"
+                            src="https://billo.app/wp-content/uploads/2023/10/hellofresh-logo-black-1-e1697794896904.webp"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Creatives section -->
+    <div class="creatives-section">
+
+        <div class="container">
+
+            <h1 class=" creatives-hero-text">Find winning UGC creatives</h1>
+
+            <div class="creative-cards">
+
+                <div class="row">
+                    <div class="col col-12 col-md-6">
+                        <img src="https://billo.app/wp-content/uploads/2023/10/2-1.webp" class="card-img-top" alt="...">
+                        <div class="card-body mt-2">
+                            <h3 class="card-title">Creators for every brand</h3>
+                            <p class="card-text mt-1">Looking for older UGC creators? Creators with tattoos? Something
+                                else
+                                entirely?
+                                Choose from our 5,000+ creators ranging demographics, styles, and interests and pick the
+                                ones
+                                with the background, skills, and equipment your vision requires.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+
+                    <div class="col col-12 col-md-6">
+                        <img src="https://billo.app/wp-content/uploads/2023/09/1.webp
+                            " class="card-img-top img-2" alt="...">
+                        <div class="card-body mt-2">
+                            <h2 class="card-title card-2">Test what works best</h2>
+                            <p class="card-text mt-1">Experiment with different types of user-generated content
+                                (testimonials,
+                                showcases, mashups, post production) to find ad creative that hits or optimize
+                                performance
+                                by
+                                testing several proven creatives to find the best-of-the-best.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Improve Metrics section -->
+
+    <section class="container">
+        <h1 class="custom-accordion-headline">Improve your conversion metrics</h1>
+        <div class="acc-vid-section">
+            <div class="custom-accordion">
+                <div class="custom-accordion-item">
+                    <button class="custom-accordion-button">
+                        <h5>Grab attention and drive performance <span class="plus_icon">+</span></h5>
+                    </button>
+                    <div class="custom-accordion-content">
+                        <p>Maximize your ad impact and reduce costs and workloads with versatile designed for diverse
+                            formats, channels, and audiences.</p>
+
+                        <!-- Display video here only on mobile -->
+                        <div id="video-section-for-mobile">
+                            
+                            <video autoplay="true" muted="true" loop="true" preload="auto"
+                                src="https://billo.app/wp-content/uploads/2023/09/1video-1.mp4" type="video/mp4">
+                                alt="Related Video"></video>
+
+                                <button class="acc-btn w-100">Order now</button>
+                        </div>
+
+                        <button id="acc-btn-desktop" class="acc-btn ">Order now</button>
+                    </div>
+                </div>
+                <div class="custom-accordion-item">
+                    <button class="custom-accordion-button">
+                        <h5>Build interest and expand reach <span class="plus_icon">+</span></h5>
+                    </button>
+                    <div class="custom-accordion-content">
+                        <p>Optimize your budget and accelerate A/B testing by delivering more content faster to identify
+                            winning strategies efficiently.</p>
+
+                        <!-- Display video here only on mobile -->
+                        <div id="video-section-for-mobile">
+                            <video autoplay="true" muted="true" loop="true" preload="auto"
+                                src="https://billo.app/wp-content/uploads/2023/09/2video-1.mp4" type="video/mp4">
+                                alt="Related Video"></video>
+                                <button class="acc-btn w-100">Order now</button>
+                        </div>
+
+                        <button id="acc-btn-desktop" class="acc-btn ">Order now</button>
+                    </div>
+                </div>
+                <div class="custom-accordion-item">
+                    <button class="custom-accordion-button">
+                        <h5>Drive desire and surge sales<span class="plus_icon">+</span></h5>
+                    </button>
+                    <div class="custom-accordion-content">
+                        <p>Boost conversions and lower PPC expenses with top-tier UGC crafted by experienced creators,
+                            driving clicks and sales.</p>
+
+                        <!-- Display video here only on mobile -->
+                        <div id="video-section-for-mobile">
+                            <video autoplay="true" muted="true" loop="true" preload="auto"
+                                src="https://billo.app/wp-content/uploads/2023/09/3video-1.mp4" type="video/mp4">
+                                alt="Related Video"></video>
+                                <button class="acc-btn w-100">Order now</button>
+                        </div>
+
+                        <button id="acc-btn-desktop" class="acc-btn ">Order now</button>
+                    </div>
+                </div>
+                <div class="custom-accordion-item">
+                    <button class="custom-accordion-button">
+                        <h5>Inspire action and raise revenue <span class="plus_icon">+</span></h5>
+                    </button>
+                    <div class="custom-accordion-content">
+                        <p>Achieve rapid conversions and improve ROAS with videos tailored to your marketing strategy,
+                            all
+                            while simplifying the whole ad creation process.</p>
+                        <!-- Display video here only on mobile -->
+                        <div id="video-section-for-mobile">
+                            <video autoplay="true" muted="true" loop="true" preload="auto"
+                                src="https://billo.app/wp-content/uploads/2023/09/4video-1.mp4" type="video/mp4">
+                                alt="Related Video"></video>
+
+                                
+                                <button class="acc-btn w-100">Order now</button>
+                                
+                        </div>
+
+
+                        <button id="acc-btn-desktop" class="acc-btn ">Order now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="video-section">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Engage section -->
+
+    <div class="container">
+        <div class="engage-section ">
+            <h1 class="engage-hero-text">Engage Effortessly</h1>
+
+            <div class="engage-content-rows">
+
+                <div class="row">
+                    <div class="col col-12 col-md-6 img_and_details">
+                        <div class="row img-details-row">
+                            <div class="col col-md-6 col-sm-12" style="
+                        width: 27%">
+                                <img class="creative-img" src="https://billo.app/wp-content/uploads/2023/09/icon-1.webp"
+                                    class="" alt="">
+                            </div>
+                            <div class="col col-12 col-lg-6 engage-text" style="
+                        width: 67%">
+                                <h4>Dedicated success managers</h4>
+                                <p>Get expert help from a dedicated account manager to create tasks, build briefs, and
+                                    choose
+                                    UGC creators for you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col col-12 col-md-6 img_and_details">
+                        <div class="row img-details-row">
+                            <div class="col col-md-6 col-sm-12 eng-img" style="
+                        width: 27%">
+                                <img class="creative-img"
+                                    src="	https://billo.app/wp-content/uploads/2023/09/icon-2.webp" class="w-25" alt="">
+                            </div>
+                            <div class="col col-12 col-lg-6 engage-text" style="
+                        width: 67%">
+                                <h4>Direct chat with chosen creators</h4>
+                                <p>Make your vision a reality by direct messaging your UGC creators. Share feedback,
+                                    suggestions, and edit requests all in platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="engage-content-rows">
+                    <div class="row">
+
+                        <div class="col col-12 col-md-6 img_and_details">
+                            <div class="row img-details-row">
+
+                                <div class="col col-md-6 col-sm-12" style="
+                            width: 27%">
+                                    <img class="creative-img"
+                                        src="https://billo.app/wp-content/uploads/2023/09/icon-3.webp" class="" alt="">
+                                </div>
+                                <div class="col col-12 col-lg-6 engage-text" style="
+                            width: 67%">
+                                    <h4>Professional in-house editors</h4>
+                                    <p>Want to upgrade your UGC? Have our in-house editors polish your ads and make your
+                                        videos
+                                        look
+                                        ultra-professional in no time.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col-12 col-md-6 img_and_details">
+                            <div class="row img-details-row">
+                                <div class="col col-md-6 col-sm-12" style="
+                            width: 27%">
+
+                                    <img class="creative-img"
+                                        src="https://billo.app/wp-content/uploads/2023/09/icon-4.webp"
+                                        style="padding: 0;" alt="">
+                                </div>
+                                <div class="col col-lg-6 col-12 engage-text" style="
+                            width: 67%">
+                                    <h4>AI Storyboard Writer</h4>
+                                    <p>Save time, effort, and energy and let our AI Storyboard Writer do the work for
+                                        you.
+                                        Create
+                                        more UGC quicker, and get testing ads faster.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="clickMe()" class="btn billo-btn mt-5 mb-5"> Order now
+            </button>
+        </div>
+    </div>
+
+
+    <!-- Boost ad section -->
+
+    <div class="boost-ad-section">
+        <div class="container">
+
+            <div class="row boost-row">
+                <div class="ads-perf-head">
+                    <h1 class="active-on-small">Boost ad performance with Billo</h1>
+                </div>
+                <div class="col ">
+                    <div class=" " style=" max-width: 300px;">
+                        <video class="card-img-top" playsinline="true" width="100%"
+                            style="object-fit: cover; border-radius: 15px;" autoplay="true" muted="true" loop="true"
+                            preload="auto">
+                            <source src="https://billo.app/wp-content/uploads/2023/09/onboarding_small.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <!-- <img src="https://billo.app/wp-content/uploads/2023/09/video-bg.webp" alt="" srcset="">
+                    <img class="ads-img" decoding="async" src="https://billo.app/wp-content/uploads/2023/09/video-bg.webp"
+                        data-orig-src="https://billo.app/wp-content/uploads/2023/09/video-bg.webp"
+                        > -->
+                </div>
+                <div class="col  colm-2">
+
+
+                    <div class="points-div">
+                        <h1 class="active-on-large">Boost ad performance with Billo</h1>
+                        <ol>
+                            <li>Define your vision</li>
+                            <li>Choose your creators</li>
+                            <li>Get your winning ads</li>
+                        </ol>
+                    </div>
+
+
+                    <button onclick="clickMe()" class="btn billo-btn mt-3 mb-5"> Order now
+                    </button>
+                </div>
+            </div>
+
+            <hr style=" width: 100%; color: #717171;">
+        </div>
+
+    </div>
+
+    <!-- Footer with brandings section -->
+
+    <section class="puller-section ">
+        <div class="container">
+
+
+            <div class="flex-parent row w-100 m-auto">
+                <div class="col col-6 col-lg-2 col-md-2">
+                    <p class="find-by">By business type</p>
+                    <div class="find-by-list">
+                        <p>eCommerce</p>
+                        <p>Agencies</p>
+                        <p>Apps</p>
+                    </div>
+                </div>
+
+                <div class="col col-6 col-lg-2 col-md-2">
+                    <p class="find-by">By channel</p>
+                    <div class="find-by-list">
+                        <p>Tiktok</p>
+                        <p>Facebook</p>
+                        <p>Instagram</p>
+                        <p>Youtube</p>
+                        <p>Amazon</p>
+                        <p>Shopify</p>
+                    </div>
+                </div>
+                <div class="col col-6 col-lg-2 col-md-2">
+                    <p class="find-by">Resources</p>
+                    <div class="find-by-list">
+                        <p>Blog</p>
+                        <p>About Us</p>
+                        <p>Help Center</p>
+                        <p>Affiliate program</p>
+                        <p>Careers</p>
+                    </div>
+                </div>
+                <div class="col col-6 col-lg-2 col-md-2">
+                    <p class="find-by">Legal</p>
+                    <div class="find-by-list">
+                        <p>Terms of service</p>
+                        <p>Privacy policy</p>
+                        <p>Refund policy</p>
+                        <p>Pack Expiration policy</p>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-sm-12 col-md-2">
+                    <p class="find-by">Contact us</p>
+                    <div class="find-by-list contact-row row ">
+                        <p class="col-6 col-md-12">584 Castro St. 2163
+                            San Francisco,
+                            CA 94114</p>
+                        <div class="col-6 col-md-12">
+                            <p>+1 650 699 6740</p>
+                            <p>hello@billo.app</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-imgs">
+                <img class="social-img" src="https://billo.app/wp-content/uploads/2023/09/Facebook-24.svg" alt="">
+                <img class="social-img" src="https://billo.app/wp-content/uploads/2023/09/TikTok-24.svg" alt="">
+                <img class="social-img" src="https://billo.app/wp-content/uploads/2023/09/Instagram-24.svg" alt="">
+                <img class="social-img" src="https://billo.app/wp-content/uploads/2023/09/LinkedIn-24.svg" alt="">
+            </div>
+            <!-- <hr> -->
+
+
+
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <div class="container" style="padding-bottom: 3%;">
+            <footer class="courtesy">
+                <p class="courtesy-text-p">Become a creator</p>
+                <div class="appstore-imgs">
+                    <img src="https://billo.app/wp-content/uploads/2021/04/app-store.svg" alt="" srcset="">
+                    <img src="https://billo.app/wp-content/uploads/2021/04/google-play.svg" alt="">
+                </div>
+                <p class="courtesy-text-bp"> Copyrights 2024 <span style="text-decoration: underline;">By Billo.</span>
+                    All Rights Reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                speed: 600,
+                variableWidth: true,
+                responsive: [
+                    // {
+                    //     breakpoint: 1024,
+                    //     settings: {
+                    //         slidesToShow: 4,
+                    //         slidesToScroll: 2,
+                    //         infinite: false,
+                    //         arrows: false,
+                    //         mobileFirst: true
+                    //     }
+                    // },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            mobileFirst: true
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            mobileFirst: true
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+            $('.carousel-prev').click(function () {
+                $('.carousel').slick('slickPrev');
+            });
+
+            $('.carousel-next').click(function () {
+                $('.carousel').slick('slickNext');
+            });
+
+
+            $('.logo-slider').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 4500,
+                pauseOnHover: false,
+                cssEase: 'linear'
+            });
+
+        })
+    </script>
+    <!-- My JS -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
