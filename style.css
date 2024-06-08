@@ -419,13 +419,13 @@ flex-direction: row;
 .acc-vid-section {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     margin: auto;
     align-items: center;
     justify-content: space-between;
 } 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     .acc-vid-section {
         /* display: flex; */
         flex-direction: column;
@@ -454,7 +454,7 @@ flex-direction: row;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #video-section, #acc-btn-desktop {
         display: none;
     }
@@ -462,7 +462,7 @@ flex-direction: row;
    
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width:1001px) {
     #video-section-for-mobile {
         display: none;
     }
