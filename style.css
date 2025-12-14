@@ -495,7 +495,14 @@ h5  > span {
     margin-top: 22px; 
 }
 
+.metrics-h5{
+font-weight:bolder;
+}
 
+.metrics-p{
+color: gray;
+
+}
 
 
 /* Engage section styles */
